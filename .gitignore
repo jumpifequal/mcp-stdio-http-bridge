@@ -1,0 +1,26 @@
+# Runtime tool-list cache (contains backend tool schemas)
+.bridge-cache/
+
+# Old versions and local distribution bundles
+old/
+Distribution/
+
+# Local configs (may contain Bearer tokens) and binaries
+claude_desktop_config-good.json
+claude_desktop_config.example.json
+claude_desktop_config.json
+claude_desktop_config.json.lnk
+x64dbg-MCP-Server-v1.3.zip
+*.zip
+*.lnk
+
+# OS / editor noise
+node_modules/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Image sources (rendered PNGs are committed)
+assets/banner.svg
+assets/social-preview.svg
