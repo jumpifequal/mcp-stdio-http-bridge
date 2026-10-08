@@ -131,6 +131,8 @@ Add one entry per backend under `mcpServers`. Each entry runs its own bridge pro
 }
 ```
 
+A ready-to-edit version for x64dbg, x32dbg and Malcat is in [`claude_desktop_config.example.json`](claude_desktop_config.example.json): replace `<path_to>` and `<YOUR_TOKEN>`, then merge its `mcpServers` entries into your config.
+
 With these settings, the model sees the backend tools plus `x64dbg_status` / `x64dbg_list_tools` / `x64dbg_call`, and the same set for `x32dbg_*` and `alphaxiv_*`.
 
 Then **quit Claude Desktop completely**, including the system-tray or menu-bar icon, and start it again. Open a new conversation or Cowork session.

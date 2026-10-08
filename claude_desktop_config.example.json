@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "x64dbg-x64": {
+      "command": "node.exe",
+      "args": [
+        "<path_to>\\mcp-stdio-http-bridge.mjs",
+        "http://127.0.0.1:9094/",
+        "Authorization: Bearer <YOUR_TOKEN>"
+      ],
+      "env": {
+        "BRIDGE_PROBE_MS": "5000",
+        "BRIDGE_CONNECT_MS": "3000",
+        "BRIDGE_STATUS_TOOL": "x64dbg_status"
+      }
+    },
+    "x64dbg-x32": {
+      "command": "node.exe",
+      "args": [
+        "<path_to>\\mcp-stdio-http-bridge.mjs",
+        "http://127.0.0.1:9095/",
+        "Authorization: Bearer <YOUR_TOKEN>"
+      ],
+      "env": {
+        "BRIDGE_PROBE_MS": "5000",
+        "BRIDGE_CONNECT_MS": "3000",
+        "BRIDGE_STATUS_TOOL": "x32dbg_status"
+      }
+    },
+    "malcat": {
+      "command": "node.exe",
+      "args": [
+        "<path_to>\\mcp-stdio-http-bridge.mjs",
+        "http://127.0.0.1:9009/mcp"
+      ],
+      "env": {
+        "BRIDGE_PROBE_MS": "5000",
+        "BRIDGE_CONNECT_MS": "3000",
+        "BRIDGE_STATUS_TOOL": "malcat_status"
+      }
+    }
+  }
+}
